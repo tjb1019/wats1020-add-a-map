@@ -6,7 +6,15 @@
    HTML structures and invoke the proper JS code accordingly. Be sure
    to reference the Bootstrap documentation.)
 */
+$(document).ready(function() {
+	
 
+
+
+
+
+
+});
 // TODO: Inside of your on ready handler, invoke the Leaflet.js library
 // to draw a map in your `#map-container` div.
 
