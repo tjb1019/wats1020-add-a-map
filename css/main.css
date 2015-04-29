@@ -3,11 +3,26 @@
    ========================================================================== */
 
 #map-container { height: 180px; }
-
+body {
+	background-color: black;
+	color: white;
+}
+.jumbotron {
+	background-color: inherit;
+	padding: 0;
+}
+#home {
+	text-align: center;
+	margin-top: 0;
+}
 .img-adjustment {
 	width: 100%;
 	height: 600px;
 	max-height: 600px;
+}
+h1,
+h2 {
+	font-family: 'Audiowide', cursive;
 }
 
 
