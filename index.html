@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Audiowide|Playball' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Audiowide|Playball' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -57,9 +57,6 @@
     <div class="jumbotron">
       <div class="container">
         <h1 id="home">Mt. Rainier Information</h1>
-        <!-- TODO: Create an HTML structure that will trigger the Bootstrap
-                   carousel feature. http://getbootstrap.com/javascript/#carousel -->
-		
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -104,19 +101,21 @@
     </div>
 
     <div class="container">
-        <div class="row">
-			<div class="col-md-3 col-md-offset-5">
-				<img src="img/john-muir.jpg" id="john-muir">
-			</div>
+        <div id="muir-house">
+			<video autoplay loop id="bgvid">
+				<source src="video/" type="video/mp4">
+			</video>
+			<div class="row">
+				<div class="col-md-3 col-md-offset-5">
+					<img src="img/john-muir.jpg" id="john-muir">
+				</div>
+		    </div>
+		    <blockquote>
+				<p>Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.</p>
+				<footer>John Muir, Naturalist<span class="glyphicon glyphicon-leaf" id="leaf"></span></footer>
+		    </blockquote>
 		</div>
-		<blockquote>
-        <p>Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.</p>
-		 <footer>John Muir, Naturalist<span class="glyphicon glyphicon-leaf" id="leaf"></span></footer>
-      </blockquote>
       <div id="about" role="tabpanel">
-      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
-            http://getbootstrap.com/javascript/#tabs -->
-
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="active"><a href="#description" role="tab" data-toggle="tab">Description</a></li>
 			<li><a href="#history" role="tab" data-toggle="tab">History</a></li>
@@ -140,8 +139,6 @@
 			  <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
 			</div>
 			<div id="stats" class="tab-pane">
-			  <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
-						  enhance the HTML if you need to. -->
 			  <h2>Statistics</h2>
 			  <div class="row" id="stats-list">
 				  <dl>
@@ -175,8 +172,6 @@
 
       <div id="map">
         <h2>Map</h2>
-        <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
-                    http://leafletjs.com/examples/quick-start.html -->
         <div id="map-container"></div>
       </div>
 

@@ -4,11 +4,10 @@
 
 #map-container { height: 180px; }
 body {
-	background-color: black;
-	color: white;
+	background-image: url('../img/halftone.png');
 }
 .jumbotron {
-	background-color: inherit;
+	background: inherit;
 	padding: 0;
 }
 #home {
@@ -21,7 +20,7 @@ body {
 	max-height: 500px;
 }
 .carousel-caption h2 {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Rock Salt', cursive;
 }
 h1,
 h2 {
@@ -42,7 +41,6 @@ blockquote {
 	font-size: 3rem;
 }
 blockquote footer {
-	color: white;
 	font-family: 'Roboto';
 	font-size: 1.8rem
 }
