@@ -3,203 +3,196 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Mt. Rainier Information</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Mt. Rainier Information</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-		<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Audiowide|Playball' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Audiowide|Playball' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Mt. Rainier Info</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#description">Description</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#stats">Stats</a></li>
-              </ul>
-            </li>
-            <li><a href="#map">Map</a></li>
-            <li><a href="#links">Links</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 id="home">Mt. Rainier Information</h1>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item img-adjustment active">
-					<img class="img-adjustment" src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="Lake reflection of Mt. Rainier">
-					<div class="carousel-caption">
-						<h2>Mount Rainier reflects in a small lake at the top of the Tatoosh Range</h2>
-					</div>
-				</div>
-				<div class="item img-adjustment">
-					<img class="img-adjustment" src="img/carousel/Mount_Rainier_-_Paradise_-_Dead_Horse_Creek_Trail_-_August_2014_-_01.jpg" alt="Dead Horse Creek Trail">
-					<div class="carousel-caption">
-						<h2>Dead Horse Creek Trail</h2>
-					</div>
-				</div>
-				<div class="item img-adjustment">
-					<img class="img-adjustment" src="img/carousel/Nisqually_River_near_Cougar_Rock_01.jpg" alt="Mt. Rainier as seen from Nisqually River">
-					<div class="carousel-caption">
-						<h2>Mount Rainier seen from small footbridge on Wonderland Trail</h2>
-					</div>
-				</div>
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<nav class="navbar navbar-inverse">
+	    <div class="container-fluid">
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+		  		</button>
+		  		<a class="navbar-brand" href="#">Mt. Rainier Info</a>
 			</div>
 
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-      </div>
-    </div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		  		<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#description">Description</a></li>
+							<li><a href="#history">History</a></li>
+							<li><a href="#stats">Stats</a></li>
+						</ul>
+			        </li>
+					<li><a href="#map">Map</a></li>
+					<li><a href="#links">Links</a></li>
+		  		</ul>
+			</div>
+	    </div>
+	</nav>
 
-    <div class="container">
-        <div id="muir-house">
-			<video autoplay loop id="bgvid">
-				<source src="video/" type="video/mp4">
-			</video>
-			<div class="row">
-				<div class="col-md-3 col-md-offset-5">
-					<img src="img/john-muir.jpg" id="john-muir">
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+	    <div class="container">
+		    <h1 id="home">Mt. Rainier Information</h1>
+		    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item img-adjustment active">
+						<img class="img-adjustment" src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="Lake reflection of Mt. Rainier">
+						<div class="carousel-caption">
+							<h2>Mount Rainier reflects in a small lake at the top of the Tatoosh Range</h2>
+						</div>
+					</div>
+					<div class="item img-adjustment">
+						<img class="img-adjustment" src="img/carousel/Mount_Rainier_-_Paradise_-_Dead_Horse_Creek_Trail_-_August_2014_-_01.jpg" alt="Dead Horse Creek Trail">
+						<div class="carousel-caption">
+							<h2>Dead Horse Creek Trail</h2>
+						</div>
+					</div>
+					<div class="item img-adjustment">
+						<img class="img-adjustment" src="img/carousel/Nisqually_River_near_Cougar_Rock_01.jpg" alt="Mt. Rainier as seen from Nisqually River">
+						<div class="carousel-caption">
+							<h2>Mount Rainier seen from small footbridge on Wonderland Trail</h2>
+						</div>
+					</div>
 				</div>
-		    </div>
-		    <blockquote>
-				<p>Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.</p>
-				<footer>John Muir, Naturalist<span class="glyphicon glyphicon-leaf" id="leaf"></span></footer>
-		    </blockquote>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+	    </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<img src="img/john-muir.jpg" id="john-muir" class="img-responsive center-block">
 		</div>
-      <div id="about" role="tabpanel">
-		<ul class="nav nav-tabs" role="tablist">
-			<li class="active"><a href="#description" role="tab" data-toggle="tab">Description</a></li>
-			<li><a href="#history" role="tab" data-toggle="tab">History</a></li>
-			<li><a href="#stats" role="tab" data-toggle="tab">Stats</a></li>
-		</ul>
+		<blockquote>
+			<p>Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.</p>
+			<footer>John Muir, Naturalist<span class="glyphicon glyphicon-leaf" id="leaf"></span></footer>
+		</blockquote>
+		<div id="about" role="tabpanel">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="active"><a href="#description" role="tab" data-toggle="tab">Description</a></li>
+				<li><a href="#history" role="tab" data-toggle="tab">History</a></li>
+				<li><a href="#stats" role="tab" data-toggle="tab">Stats</a></li>
+			</ul>
 		<div class="tab-content">
 			<div id="description" class="tab-pane active">
-			  <h2>Description</h2>
-			  <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
+				<h2>Description</h2>
+				<p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
 			</div>
 			<div id="history" class="tab-pane">
-			  <h2>History</h2>
-			  <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
+				<h2>History</h2>
+				<p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
 
-			  <p>Captain George Vancouver reached Puget Sound in early May 1792 and became the first European to see the mountain.</p>
+				<p>Captain George Vancouver reached Puget Sound in early May 1792 and became the first European to see the mountain.</p>
 
-			  <p>In 1833, Dr. William Fraser Tolmie explored the area looking for medicinal plants. Hazard Stevens and P. B. Van Trump received a hero's welcome in the streets of Olympia after their successful summit climb in 1870. The first female ascent was made in 1890 by Fay Fuller, accompanied by Van Trump and three other teammates.</p>
+				<p>In 1833, Dr. William Fraser Tolmie explored the area looking for medicinal plants. Hazard Stevens and P. B. Van Trump received a hero's welcome in the streets of Olympia after their successful summit climb in 1870. The first female ascent was made in 1890 by Fay Fuller, accompanied by Van Trump and three other teammates.</p>
 
-			  <p>John Muir climbed Mount Rainier in 1888, and although he enjoyed the view, he conceded that it was best appreciated from below. Muir was one of many who advocated protecting the mountain. In 1893, the area was set aside as part of the Pacific Forest Reserve in order to protect its physical/economic resources: timber and watersheds.</p>
+				<p>John Muir climbed Mount Rainier in 1888, and although he enjoyed the view, he conceded that it was best appreciated from below. Muir was one of many who advocated protecting the mountain. In 1893, the area was set aside as part of the Pacific Forest Reserve in order to protect its physical/economic resources: timber and watersheds.</p>
 
-			  <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
+				<p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
 			</div>
 			<div id="stats" class="tab-pane">
-			  <h2>Statistics</h2>
-			  <div class="row" id="stats-list">
-				  <dl>
-					<div class="col-md-4">
-						<dt>Elevation</dt>
-						<dd>14,411 ft (4,392 m)</dd>
-						<dt>Prominence</dt>
-						<dd>13,211 ft (4,027 m)</dd>
-						<dt>Range</dt>
-						<dd>Cascade Range</dd>
-					</div>
-					<div class="col-md-4">
-						<dt>Type</dt>
-						<dd>Stratovolcano</dd>
-						<dt>Age of Rock</dt>
-						<dd>500,000 years</dd>
-						<dt>Last Eruption</dt>
-						<dd>November to December, 1894</dd>
-					</div>
-					<div class="col-md-4">
-						<dt>First Ascent</dt>
-						<dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
-						<dt>Easiest Route</dt>
-						<dd>Rock/ice climb via Disappointment Cleaver</dd>
-					</div>
-				  </dl>
-			   </div>
+				<h2>Statistics</h2>
+				<div class="row" id="stats-list">
+					<dl>
+						<div class="col-md-4">
+							<dt>Elevation</dt>
+							<dd>14,411 ft (4,392 m)</dd>
+							<dt>Prominence</dt>
+							<dd>13,211 ft (4,027 m)</dd>
+							<dt>Range</dt>
+							<dd>Cascade Range</dd>
+						</div>
+						<div class="col-md-4">
+							<dt>Type</dt>
+							<dd>Stratovolcano</dd>
+							<dt>Age of Rock</dt>
+							<dd>500,000 years</dd>
+							<dt>Last Eruption</dt>
+							<dd>November to December, 1894</dd>
+						</div>
+						<div class="col-md-4">
+							<dt>First Ascent</dt>
+							<dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
+							<dt>Easiest Route</dt>
+							<dd>Rock/ice climb via Disappointment Cleaver</dd>
+						</div>
+					</dl>
+				</div>
 			</div>
 		</div>
-      </div>
+		</div>
 
-      <div id="map">
-        <h2>Map</h2>
-        <div id="map-container"></div>
-      </div>
+	    <div id="map">
+			<h2>Map</h2>
+			<div id="map-container"></div>
+	    </div>
 
-      <div id="links">
-        <h2>Links</h2>
-        <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
-        <ul class="links-list">
-          <li><a href="http://www.nps.gov/mora/index.htm">Mt. Rainier National Parks Page</a></li>
-          <li><a href="http://en.wikipedia.org/wiki/Mount_Rainier">Mt. Rainier Wikipedia Page</a></li>
-          <li><a href="http://visitrainier.com/">Mt. Rainier Tourism Page</a></li>
-          <li><a href="https://content.lib.washington.edu/warnerweb/essay.html">John Muir's Ascent of Mt. Rainier</a></li>
-        </ul>
-      </div>
+	    <div id="links">
+			<h2>Links</h2>
+			<p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
+			<ul class="links-list">
+		  		<li><a href="http://www.nps.gov/mora/index.htm">Mt. Rainier National Parks Page</a></li>
+		  		<li><a href="http://en.wikipedia.org/wiki/Mount_Rainier">Mt. Rainier Wikipedia Page</a></li>
+		  		<li><a href="http://visitrainier.com/">Mt. Rainier Tourism Page</a></li>
+		  		<li><a href="https://content.lib.washington.edu/warnerweb/essay.html">John Muir's Ascent of Mt. Rainier</a></li>
+			</ul>
+	    </div>
 
-      <hr>
+	    <hr>
 
-      <footer>
-        <p>Made by Jane Student in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
-      </footer>
-    </div> <!-- /container -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	    <footer>
+			<p>Made by Jane Student in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
+	    </footer>
+	</div> <!-- /container -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
-        <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
 
-    </body>
+</body>
 </html>

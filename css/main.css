@@ -2,9 +2,9 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+#map-container { height: 300px; }
 body {
-	background-image: url('../img/halftone.png');
+	background-image: url('../img/foggy_birds.png');
 }
 .jumbotron {
 	background: inherit;
@@ -41,7 +41,7 @@ blockquote {
 	font-size: 3rem;
 }
 blockquote footer {
-	font-family: 'Roboto';
+	font-family: 'Roboto', serif;
 	font-size: 1.8rem
 }
 #leaf {
@@ -58,7 +58,7 @@ blockquote footer {
 }
 #about p,
 #stats dl{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	line-height: 2.5rem;
 }
 dd {
